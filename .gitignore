@@ -1,0 +1,6 @@
+config/*
+notes.md
+__pycache__/*
+setup.sh
+start.sh
+config.py
