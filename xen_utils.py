@@ -46,5 +46,8 @@ def get_xen_domain():
     if(len(output.stdout) == 0):
         logging.error("VM %s not running", vm_name)
     else:
-        print(output.stdout.split())
-        #[b'windows7-sp1', b'1', b'3000', b'2', b'--p---', b'88.3']
+        #dom is running split string to get the int
+        dom_num = output.stdout.split()[1]
+        dom_num = str(dom_num).replace('b', '')
+        dom_num = str(dom_num).replace("'", "")
+        return dom_num
