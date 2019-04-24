@@ -12,3 +12,6 @@ Todo
 * xen
 * drakvuf
 * Python > 3.5
+
+### Disclaimer  
+This is a pretty specialised script for running drakvuf on my system, use it with caution on yours
