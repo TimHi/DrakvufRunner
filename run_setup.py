@@ -26,6 +26,5 @@ def main():
     if not(is_gvncviewer_active()):
         logging.info("gvncviewer not running, starting it now...")
         start_gvncviewer()
-    
 if __name__ == "__main__":
     main()
