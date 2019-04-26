@@ -11,7 +11,7 @@ Currently these arguments are implemented and used for an easier running of drak
 **I** - ThreadID in the process to hijack for injection (requires i)  
 **e** - executable to start with injection set in config.py  
 **m** - Injection method set in config.py  
-**b** - Exit from execution as soon as a BSoD is detected
+**b** - Exit from execution as soon as a BSoD is detected  
 **n** - Use extraction method based on function injection (requires -D)  
 **t** - Timeout of drakvuf in seconds  
 **o** - Output format set in config.py  
