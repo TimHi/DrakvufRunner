@@ -72,10 +72,12 @@ def build_drakvuf_command(program_arguments):
             drakvuf_command += " -p"
         else:
             logging.warning("Unrecognized parameter, skipping")
-    for a_plugin in ACTIVE_PLUGINS:
-        drakvuf_command += " -a " + a_plugin
-    for d_plugin in DEACTIVATED_PLUGINS:
-        drakvuf_command += " -x " + d_plugin
+    if(len(ACTIVE_PLUGINS) > 1):
+        for a_plugin in ACTIVE_PLUGINS:
+            drakvuf_command += " -a " + a_plugin
+    if(len(DEACTIVATED_PLUGINS) > 1):
+        for d_plugin in DEACTIVATED_PLUGINS:
+            drakvuf_command += " -x " + d_plugin
     #We're done building Frankensteins Monster, run it
     logging.info("Drakvuf command: %s", drakvuf_command)
     run_command(drakvuf_command) 
